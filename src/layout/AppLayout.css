@@ -1,0 +1,28 @@
+.nav-background {
+  background-color: black;
+}
+
+.me-2 {
+  border: 0.1px solid #dee2e6 !important;
+  background-color: #495057 !important;
+}
+
+input {
+  color: #dee2e6 !important;
+}
+
+.me-2::placeholder {
+  color: #dee2e6 !important;
+}
+
+.custom-red-button {
+  border-color: red !important;
+  color: red !important;
+  background-color: transparent !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.custom-red-button:hover {
+  background-color: red !important;
+  color: white !important;
+}
