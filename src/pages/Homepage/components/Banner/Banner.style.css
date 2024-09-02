@@ -1,3 +1,4 @@
+/* 기본 스타일 */
 .banner {
   height: 56vh;
   background-position: left;
@@ -25,4 +26,46 @@
 
 .banner-text-area > * {
   z-index: 2;
+}
+
+/* 모바일 버전 (화면 너비 768px 이하) */
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh; /* 배너 높이를 줄여줌 */
+    background-position: center; /* 배경 이미지를 가운데 정렬 */
+  }
+
+  .banner:before {
+    height: 40vh; /* 배너 높이에 맞게 그라데이션 조정 */
+  }
+
+  .banner-text-area {
+    width: 90%; /* 텍스트 영역을 더 넓게 만듦 */
+    padding: 10px; /* 패딩 줄이기 */
+  }
+
+  .banner-text-area > * {
+    font-size: 0.9rem; /* 글씨 크기 조정 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+  }
+}
+
+/* 작은 모바일 디바이스 (화면 너비 480px 이하) */
+@media (max-width: 480px) {
+  .banner {
+    height: 30vh; /* 배너 높이를 더 줄임 */
+  }
+
+  .banner:before {
+    height: 30vh; /* 배너 높이에 맞게 그라데이션 조정 */
+  }
+
+  .banner-text-area {
+    width: 100%; /* 텍스트 영역을 화면 전체 너비로 설정 */
+    padding: 5px; /* 패딩을 더 줄임 */
+  }
+
+  .banner-text-area > * {
+    font-size: 0.8rem; /* 글씨 크기를 더 작게 조정 */
+  }
 }
