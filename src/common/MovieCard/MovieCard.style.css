@@ -57,27 +57,28 @@
   z-index: 2;
 }
 
-/* 모바일 버전 스타일 */
+/* 모바일 버전 스타일 최적화 */
 @media (max-width: 768px) {
   .movie-card {
-    width: 150px; /* 모바일 화면에 맞게 카드 크기 조정 */
-    height: 225px; /* 모바일 화면에 맞게 카드 크기 조정 */
+    width: 160px; /* 조금 더 큰 크기로 조정 */
+    height: 240px; /* 조금 더 큰 크기로 조정 */
   }
 
   .title-design {
-    font-size: 1.5rem; /* 모바일 화면에서 글자 크기 조정 */
+    font-size: 4vw; /* 뷰포트에 따라 글자 크기 조정 */
   }
 
   .id-design .badge {
-    margin-left: 5px; /* 모바일 화면에서 배지 여백 조정 */
+    margin-left: 4px; /* 모바일 화면에서 배지 여백 조정 */
+    font-size: 0.8rem; /* 배지 글자 크기 조정 */
   }
 
   .overlay {
-    font-size: 0.9rem; /* 모바일 화면에서 글자 크기 조정 */
+    font-size: 3.5vw; /* 뷰포트에 따라 글자 크기 조정 */
   }
 
   .movie-card:hover {
-    transform: scale(1.2) translateZ(10px); /* 모바일 화면에서 호버 효과 조정 */
+    transform: none; /* 모바일에서는 호버 효과 제거 */
   }
 }
 
@@ -88,18 +89,19 @@
   }
 
   .title-design {
-    font-size: 1.2rem; /* 더욱 작은 모바일 화면에서 글자 크기 조정 */
+    font-size: 5vw; /* 더욱 작은 모바일 화면에서 글자 크기 조정 */
   }
 
   .id-design .badge {
     margin-left: 3px; /* 더욱 작은 모바일 화면에서 배지 여백 조정 */
+    font-size: 0.7rem; /* 배지 글자 크기 조정 */
   }
 
   .overlay {
-    font-size: 0.8rem; /* 더욱 작은 모바일 화면에서 글자 크기 조정 */
+    font-size: 3.2vw; /* 더욱 작은 모바일 화면에서 글자 크기 조정 */
   }
 
   .movie-card:hover {
-    transform: scale(1.1) translateZ(5px); /* 더욱 작은 모바일 화면에서 호버 효과 조정 */
+    transform: none; /* 더욱 작은 모바일 화면에서 호버 효과 제거 */
   }
 }
